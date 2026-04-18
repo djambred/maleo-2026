@@ -7,6 +7,8 @@ export default defineConfig({
                 "resources/css/app.css",
                 "resources/js/app.js",
                 `resources/css/filament/admin/theme.css`,
+                `resources/css/filament/hub/theme.css`,
+                `resources/css/filament/connect/theme.css`,
             ],
             refresh: true,
         }),

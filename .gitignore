@@ -1,3 +1,5 @@
 db/data/*
 /db/data/
 ../db/data/*
+.DS_Store
+src/.DS_Store

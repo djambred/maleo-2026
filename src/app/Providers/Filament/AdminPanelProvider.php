@@ -33,6 +33,7 @@ class AdminPanelProvider extends PanelProvider
             ->spa()
             ->login()
             ->passwordReset()
+            ->brandName('Maleo SIAKAD')
             ->profile(\App\Filament\Pages\Auth\EditProfile::class, isSimple: false)
             ->defaultThemeMode(ThemeMode::Light)
             ->font('Montserrat')
@@ -52,6 +53,12 @@ class AdminPanelProvider extends PanelProvider
                 \Awcodes\Overlook\Widgets\OverlookWidget::class,
             ])
             ->navigationGroups([
+                NavigationGroup::make()
+                    ->label('Master Data'),
+                NavigationGroup::make()
+                    ->label('Academic'),
+                NavigationGroup::make()
+                    ->label('Communication'),
                 NavigationGroup::make()
                     ->label('Administration'),
             ])
